@@ -49,11 +49,12 @@
                                 <tbody>
                                     <?php foreach($data as $key => $stock ): ?>
                                         <tr>
+                                            <?php $color = ($stock->change == 'NEGATIVE') ? 'style="color: red;"' : 'style="color: #44c644;"'; ?>
                                             <td><?php echo $stock->symbol; ?></td>
                                             <td><?php echo $stock->name; ?></td>
                                             <td><?php echo $stock->last_value; ?></td>
-                                            <td><?php echo $stock->percent_change; ?></td>
-                                            <td><?php echo $stock->value_change; ?></td>
+                                            <td <?php echo $color; ?>><?php echo $stock->percent_change; ?></td>
+                                            <td <?php echo $color; ?>><?php echo $stock->value_change; ?></td>
                                             <td><?php echo $stock->change; ?></td>
                                             <td><?php echo $stock->exchange; ?></td>
                                             <td><?php echo $stock->currency_code; ?></td>

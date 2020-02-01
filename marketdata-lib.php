@@ -18,7 +18,7 @@ function isJson($string) {
  */
 function get_google_finance_data(){
     //include_once('../wordpress/wp-load.php');
-    $url = 'http://www.google.com/async/finance_wholepage_price_updates?ei=sRU1Xv-SMsHt9QP7uZ_wCw&yv=3&async=mids:%2Fm%2F046k_p%7C%2Fm%2F04t5sp%7C%2Fg%2F1hbvn54mt%7C%2Fg%2F1dv1hhgx%7C%2Fg%2F1dv294zm%7C%2Fm%2F016yss%7C%2Fm%2F02853rl%7C%2Fm%2F04zvfw%7C%2Fm%2F0877z%7C%2Fm%2F02hl6w%7C%2Fm%2F04ww1p,currencies:%2Fm%2F02l6h%2B%2Fm%2F09nqf%7C%2Fm%2F09nqf%2B%2Fm%2F088n7%7C%2Fm%2F01nv4h%2B%2Fm%2F09nqf%7C%2Fm%2F09nqf%2B%2Fm%2F0ptk_%7C%2Fm%2F09nqf%2B%2Fm%2F02nb4kq%7C%2Fm%2F09nqf%2B%2Fm%2F0hn4_%7C%2Fm%2F0kz1h%2B%2Fm%2F09nqf,_fmt:json';
+    $url = 'http://www.google.com/async/finance_wholepage_price_updates?async=mids:/m/046k_p|/m/04t5sp|/g/1hbvn54mt|/g/1dv1hhgx|/g/1dv294zm|/m/016yss|/m/02853rl|/m/04zvfw|/m/0877z|/m/02hl6w|/m/04ww1p,currencies:/m/02l6h+/m/09nqf|/m/09nqf+/m/088n7|/m/01nv4h+/m/09nqf|/m/09nqf+/m/0ptk_|/m/09nqf+/m/02nb4kq|/m/09nqf+/m/0hn4_|/m/0kz1h+/m/09nqf,_fmt:json';
 
     $response = array('status'=> false, 'data'=> '');
     // cURL initilization
